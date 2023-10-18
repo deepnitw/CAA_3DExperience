@@ -1,0 +1,6 @@
+<meta charset="UTF-8"/>
+Title = "Line Creation";
+pFirstLbl.Title = "First Point";
+psecondlbl.Title = "Second Point";
+pFPEdtr.Title = "First Point";
+pSecondPoint.Title = "Second Point";

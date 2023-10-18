@@ -1,0 +1,3 @@
+BasicCmdAtosHdr.BasicCmdAtos.Title     = "HelloWorld";
+BasicCmdAtosHdr.BasicCmdAtos.ShortHelp = "Test";
+BasicCmdAtosHdr.BasicCmdAtos.LongHelp  = "This command allows to Test";

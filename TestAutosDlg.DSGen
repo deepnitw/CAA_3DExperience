@@ -1,0 +1,205 @@
+<DSxDevCodeGen
+  ExtensionName="DialogDesigner"
+  EngineVersion="1.0">
+  <Content
+    Version="1.1"
+    HasDesign="true">
+    <DesignModel>
+      <RootWidget
+        Type="CATDlgDialog"
+        ID="8d250b43-8a90-468f-8fd7-00bf48ad2ed8"
+        Version="1.0"
+        Name="TestAutosDlg"
+        UseOKButton="true"
+        UseCancelButton="true"
+        HelpBtnEnabled="false"
+        Title="Line Creation">
+        <Children
+          Type="List">
+          <Item
+            Type="CATDlgLabel"
+            ID="737c2125-50fb-4a89-be6a-62538a7567f5"
+            Version="1.0"
+            Name="pFirstLbl"
+            Title="First Point">
+            <GridLayoutConstraint
+              Row="0"
+              Col="0"
+              Width="1"
+              Height="1">
+              <Anchor
+                AttachedToLeft="true"
+                AttachedToRight="false"
+                AttachedToTop="true"
+                AttachedToBottom="false"
+                ConstantWidth="false"
+                ConstantHeight="false" />
+            </GridLayoutConstraint>
+          </Item>
+          <Item
+            Type="CATDlgLabel"
+            ID="ee65d966-4f6f-4439-ab58-54a7fec91c88"
+            Version="1.0"
+            Name="psecondlbl"
+            Title="Second Point">
+            <GridLayoutConstraint
+              Row="1"
+              Col="0"
+              Width="1"
+              Height="1">
+              <Anchor
+                AttachedToLeft="true"
+                AttachedToRight="false"
+                AttachedToTop="true"
+                AttachedToBottom="false"
+                ConstantWidth="false"
+                ConstantHeight="false" />
+            </GridLayoutConstraint>
+          </Item>
+          <Item
+            Type="CATDlgEditor"
+            ID="f35316db-2759-4ccd-9f66-b6f9943e90de"
+            Version="1.0"
+            Name="pFPEdtr"
+            Title="First Point">
+            <GridLayoutConstraint
+              Row="0"
+              Col="1"
+              Width="1"
+              Height="1">
+              <Anchor
+                AttachedToLeft="true"
+                AttachedToRight="true"
+                AttachedToTop="true"
+                AttachedToBottom="false"
+                ConstantWidth="false"
+                ConstantHeight="false" />
+            </GridLayoutConstraint>
+          </Item>
+          <Item
+            Type="CATDlgEditor"
+            ID="a9b825e0-afa2-45c7-871f-df54a0f0212d"
+            Version="1.0"
+            Name="pSecondPoint"
+            Title="Second Point">
+            <GridLayoutConstraint
+              Row="1"
+              Col="1"
+              Width="1"
+              Height="1">
+              <Anchor
+                AttachedToLeft="true"
+                AttachedToRight="true"
+                AttachedToTop="true"
+                AttachedToBottom="false"
+                ConstantWidth="false"
+                ConstantHeight="false" />
+            </GridLayoutConstraint>
+          </Item>
+        </Children>
+        <GridResizableData>
+          <ResizableRows
+            Type="List" />
+          <ResizableColumns
+            Type="List" />
+        </GridResizableData>
+      </RootWidget>
+    </DesignModel>
+    <CodeModel>
+      <UserCodes>
+        <ClassIncludes>
+          <UserCode><![CDATA[
+
+
+]]></UserCode>
+        </ClassIncludes>
+        <ClassMembers>
+          <UserCode><![CDATA[
+public:
+	HRESULT setFPName(CATUnicodeString strFPMesg);
+	HRESULT setSPName(CATUnicodeString strSPMesg);
+
+]]></UserCode>
+        </ClassMembers>
+        <ImplementIncludes>
+          <UserCode><![CDATA[
+#include "CATUnicodeString.h"
+
+]]></UserCode>
+        </ImplementIncludes>
+        <DialogConstructor>
+          <UserCode><![CDATA[
+
+
+]]></UserCode>
+        </DialogConstructor>
+        <DialogDefaultConstructor>
+          <UserCode><![CDATA[
+
+
+]]></UserCode>
+        </DialogDefaultConstructor>
+        <DialogDestructor>
+          <UserCode><![CDATA[
+
+
+]]></UserCode>
+        </DialogDestructor>
+        <PreBuildCode>
+          <UserCode><![CDATA[
+
+
+]]></UserCode>
+        </PreBuildCode>
+        <BuildAdditionalCode>
+          <UserCode><![CDATA[
+
+
+]]></UserCode>
+        </BuildAdditionalCode>
+        <UserActivateCode>
+          <UserCode><![CDATA[
+
+
+]]></UserCode>
+        </UserActivateCode>
+        <UserDesactivateCode>
+          <UserCode><![CDATA[
+
+
+]]></UserCode>
+        </UserDesactivateCode>
+        <UserCancelCode>
+          <UserCode><![CDATA[
+
+
+]]></UserCode>
+        </UserCancelCode>
+        <UserImplementCode>
+          <UserCode><![CDATA[
+HRESULT TestAutosDlg::setFPName(CATUnicodeString strFPMesg)
+{
+    _pFPEdtr->SetText(strFPMesg);
+
+    return S_OK;
+}
+HRESULT TestAutosDlg::setSPName(CATUnicodeString strSPMesg)
+{
+    _pSecondPoint->SetText(strSPMesg);
+
+    return S_OK;
+}
+
+
+]]></UserCode>
+        </UserImplementCode>
+      </UserCodes>
+      <Callbacks
+        Type="List" />
+    </CodeModel>
+    <FileInfo
+      Visibility="Local"
+      HandleResources="true"
+      ModuleResources="" />
+  </Content>
+</DSxDevCodeGen>
